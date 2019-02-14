@@ -1,0 +1,23 @@
+{
+  "name": "filipe-deschamps-fire",
+  "version": "1.0.0",
+  "description": "Implementation of Filipe Deschamps Canvas fire.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauroreisvieira/fire.git"
+  },
+  "keywords": [
+    "canvas"
+  ],
+  "author": "Mauro Reis Vieira <mauroreisvieira@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mauroreisvieira/fire/issues"
+  },
+  "homepage": "https://github.com/mauroreisvieira/fire#readme"
+}
