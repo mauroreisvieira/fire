@@ -1,24 +1,22 @@
-# ☃️ Snow
+# 🔥 Fire
 
-Implementation of Paul Lewis Canvas video.
+Implementation of Filipe Deschamps Canvas.
 
-[![❄️ Let's make some SNOW!](https://img.youtube.com/vi/VW8qoyYzWGg/0.jpg)](https://www.youtube.com/watch?v=VW8qoyYzWGg)
-
-**See the demo:** [Canvas Snow](https://mauroreisvieira.github.io/snow/)
+**See the demo:** [Canvas Fire](https://mauroreisvieira.github.io/fire/)
 
 ### ⚗️ Technology Used:
    - HTML
    - CSS
-   -  JavaScript
-   -  Canvas
+   - JavaScript
+   - Canvas
 
    ___
 
 ### 💻 Setting up your development environment
 
 ```bash
-$ git clone https://github.com/mauroreisvieira/snow
-$ cd snow && npm install
+$ git clone https://github.com/mauroreisvieira/fire
+$ cd fire && npm install
 ```
 
 ### 🏃 Running development server
@@ -29,6 +27,6 @@ $ npm run dev
 
 ___
 
-Alternatively you can [download](https://codeload.github.com/mauroreisvieira/snow/zip/master) this repository.
+Alternatively you can [download](https://codeload.github.com/mauroreisvieira/fire/zip/master) this repository.
 
 Created with ♥️ by [@mauroreisvieira](https://twitter.com/mauroreisvieira) in **Portugal**
