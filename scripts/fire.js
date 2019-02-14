@@ -16,9 +16,9 @@ class Fire {
         this.canvas.height = this.fireHeight;
         this.image = this.ctx.createImageData(this.fireWidth, this.fireHeight);
 
-       this.calculateFirePropagation = this.calculateFirePropagation.bind(this);
-       this.update = this.renderFire.bind(this);
-       requestAnimationFrame(this.update);
+        this.calculateFirePropagation = this.calculateFirePropagation.bind(this);
+        this.update = this.renderFire.bind(this);
+        requestAnimationFrame(this.update);
 
         this.start();
     }
@@ -93,6 +93,35 @@ class Fire {
             this.firePixelsArray[pixelIndex] = 0;
         }
     }
+
+    increaseFireSource() {
+        for (let column = 0; column <= this.fireWidth; column++) {
+            const overflowPixelIndex = this.fireWidth * this.fireHeight;
+            const pixelIndex = (overflowPixelIndex - this.fireWidth) + column;
+            const currentFireIntensity = this.firePixelsArray[pixelIndex];
+
+            if (currentFireIntensity < this.fireColorsPalette.length - 1) {
+                const increase = Math.floor(Math.random() * 14);
+                const newFireIntensity = currentFireIntensity + increase >= this.fireColorsPalette.length - 1 ? this.fireColorsPalette.length - 1 : currentFireIntensity + increase;
+                this.firePixelsArray[pixelIndex] = newFireIntensity;
+            }
+        }
+    }
+
+    decreaseFireSource() {
+        for (let column = 0; column <= this.fireWidth; column++) {
+            const overflowPixelIndex = this.fireWidth * this.fireHeight;
+            const pixelIndex = (overflowPixelIndex - this.fireWidth) + column;
+            const currentFireIntensity = this.firePixelsArray[pixelIndex];
+
+            if (currentFireIntensity > 0) {
+                const decay = Math.floor(Math.random() * 14);
+                const newFireIntensity = currentFireIntensity - decay >= 0 ? currentFireIntensity - decay : 0;
+                this.firePixelsArray[pixelIndex] = newFireIntensity;
+            }
+        }
+    }
+
 }
 
 new Fire(4, 20, 20);
