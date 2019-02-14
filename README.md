@@ -1,8 +1,10 @@
 # 🔥 Fire
 
-Implementation of Filipe Deschamps Canvas.
+Implementation of Filipe Deschamps Canvas video.
 
-**See the demo:** [Canvas Fire](https://mauroreisvieira.github.io/fire/)
+[![🎇 Let's make some FIRE!](https://img.youtube.com/vi/fxm8cadCqbs/0.jpg)](https://www.youtube.com/watch?v=fxm8cadCqbs)
+
+**See the demo:** [Canvas Fire](https://mauroreisvieira.github.io/fire/index.html)
 
 ### ⚗️ Technology Used:
    - HTML
